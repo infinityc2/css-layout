@@ -1,0 +1,85 @@
+/*
+    CSS Flex
+
+    ---
+    set property for use flex
+    .box {
+        display: flex;
+        --- optional ---
+        flex-direction: row;
+    }
+
+    flex-direction
+        - row (default)
+        - row-reverse
+        - column
+        - column-reverse
+    ---
+
+    Multi-line flex
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    Shorthand
+
+    from
+    .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    to
+    .box {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    Properties
+
+    flex-grow
+    flex-wrap
+    flex-shrink
+    flex-basic
+    flex
+
+    Align Justify and Distribution of Free Space between items
+    align-items
+    justify-content
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+}
+
+.box > div {
+    background-color: #333;
+}
+
+.box > div:nth-of-type(3) {
+    flex: 2
+}
+
+.one {
+    flex: 1;
+    /* flex: 1 1 auto; */
+}
+
+.two {
+    flex: 1;
+    /* flex: 1 1 auto; */
+}
+
